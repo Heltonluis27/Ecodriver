@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="2"
+        android:translateY="2">
+        <!-- Hose & Nozzle (Colored high contrast white) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M66,35 h4 c2.2,0 4,1.8 4,4 v22 c0,2.2 -1.8,4 -4,4 h-2 v-3 h2 c0.6,0 1,-0.4 1,-1 v-18 c0,-0.6 -0.4,-1 -1,-1 h-4 Z" />
+        <!-- Hose Connection and Nozzle Tip -->
+        <path
+            android:fillColor="#2ECC71"
+            android:pathData="M70,58 h4 v4 h-4 Z" />
+
+        <!-- Fuel Pump Main Body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M34,26 c0,-2.2 1.8,-4 4,-4 h24 c2.2,0 4,1.8 4,4 v48 c0,2.2 -1.8,4 -4,4 h-24 c-2.2,0 -4,-1.8 -4,-4 Z" />
+
+        <!-- Screen (Dark Forest Accent) -->
+        <path
+            android:fillColor="#081F1A"
+            android:pathData="M40,32 h20 v14 h-20 Z" />
+
+        <!-- Eco Fuel Drop inside screen -->
+        <path
+            android:fillColor="#2ECC71"
+            android:pathData="M50,37 c-1.5,1.5 -2.5,2.5 -2.5,3.5 c0,1.4 1.1,2.5 2.5,2.5 s2.5,-1.1 2.5,-2.5 c0,-1 -1,-2 -2.5,-3.5 Z" />
+
+        <!-- Double conversion arrows on white body -->
+        <path
+            android:fillColor="#103F35"
+            android:pathData="M42,54 h8 v2 l4,-3 l-4,-3 v2 h-8 Z" />
+        <path
+            android:fillColor="#2ECC71"
+            android:pathData="M58,62 h-8 v-2 l-4,3 l4,3 v-2 h8 Z" />
+
+        <!-- Gauge lines on screen -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,34 h4 v2 h-4 Z M54,42 h4 v2 h-4 Z" />
+    </group>
+</vector>

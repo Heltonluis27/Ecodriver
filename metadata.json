@@ -1,0 +1,6 @@
+{
+  "name": "Conversor de Consumo",
+  "description": "Prático conversor de consumo de combustível de L/100km para km/L e calculadora de custo de viagens com base no preço do combustível e distância.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

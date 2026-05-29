@@ -1,7 +1,7 @@
-name: Build Release APK
+name: Build Debug APK
 
 on:
-  workflow_dispatch:   # Só roda quando você clicar manualmente
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,23 +18,14 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Decodificar Keystore
-        run: |
-          echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 --decode > debug.keystore
-
       - name: Tornar gradlew executável
         run: chmod +x ./gradlew
 
-      - name: Build APK Release Assinado
-        run: ./gradlew assembleRelease
-        env:
-          STORE_FILE: debug.keystore
-          STORE_PASSWORD: android
-          KEY_ALIAS: androiddebugkey
-          KEY_PASSWORD: android
+      - name: Build APK Debug
+        run: ./gradlew assembleDebug
 
-      - name: Upload APK Release
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Ecodriver-Release-APK
-          path: app/build/outputs/apk/release/app-release.apk
+          name: Ecodriver-Debug
+          path: app/build/outputs/apk/debug/app-debug.apk
